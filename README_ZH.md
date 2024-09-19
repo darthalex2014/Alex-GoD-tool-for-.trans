@@ -4,6 +4,9 @@
 
 这是一个简单的 GUI 应用程序，用于从/向 .trans 文件（通常用于游戏本地化）提取和添加字符串。
 
+![image](https://github.com/user-attachments/assets/19307c0f-eb01-4acf-9a19-0187676bad35) ![image](https://github.com/user-attachments/assets/a0c52db5-e283-4bcb-a3fd-21087fb0d6c0)
+![image](https://github.com/user-attachments/assets/bdeb6b7e-a67f-462d-826d-e8356ff56e21)
+
 **功能：**
 
 * 从 .trans 文件的选定列中提取字符串。
