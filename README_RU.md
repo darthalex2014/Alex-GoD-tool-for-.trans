@@ -4,6 +4,9 @@
 
 Это простое приложение с графическим интерфейсом для извлечения и добавления строк из/в .trans файлов, которые обычно используются для локализации игр.
 
+![image](https://github.com/user-attachments/assets/19307c0f-eb01-4acf-9a19-0187676bad35) ![image](https://github.com/user-attachments/assets/a0c52db5-e283-4bcb-a3fd-21087fb0d6c0)
+![image](https://github.com/user-attachments/assets/bdeb6b7e-a67f-462d-826d-e8356ff56e21)
+
 **Возможности:**
 
 * Извлечение строк из выбранных столбцов .trans файла.
