@@ -40,5 +40,5 @@ B. Используйте кнопку "Select Files", чтобы выбрать
 2. Скачайте скрипт.
 3. Запустите скрипт:
    ```
-   python TransExtractor.py
+   python ImExTrans.py
    ```
