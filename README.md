@@ -4,6 +4,10 @@
 
 This is a simple GUI application for extracting and adding strings from/to .trans files, commonly used in game localization.
 
+![image](https://github.com/user-attachments/assets/19307c0f-eb01-4acf-9a19-0187676bad35) ![image](https://github.com/user-attachments/assets/a0c52db5-e283-4bcb-a3fd-21087fb0d6c0)
+![image](https://github.com/user-attachments/assets/bdeb6b7e-a67f-462d-826d-e8356ff56e21)
+
+
 **Features:**
 
 * Extract strings from selected columns of a .trans file.
