@@ -41,5 +41,5 @@ B. Use the "Select Files" button to choose specific files to extract strings fro
 2. Download the script.
 3. Run the script:
    ```
-   python TransExtractor.py
+   python ImExTrans.py
    ```
