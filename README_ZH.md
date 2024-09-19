@@ -1,4 +1,4 @@
-### English / Русский / 中文
+### [English](README.md) / [Русский](README_RU.md) / 中文
 
 **Alex(GoD) tool for .trans**
 
