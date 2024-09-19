@@ -40,5 +40,5 @@ B. 使用“选择文件”按钮选择要从中提取字符串的特定文件�
 2. 下载脚本。
 3. 运行脚本：
    ```
-   python TransExtractor.py
+   python ImExTrans.py
    ```
