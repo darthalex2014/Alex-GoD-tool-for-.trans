@@ -40,10 +40,10 @@ class TransExtractor:
 
         # --- Кнопки ---
         self.preview_button = ttk.Button(master, text="Preview / Предпросмотр / 预览", command=self.preview_trans_file)
-        self.preview_button.grid(row=2, column=0, columnspan=3, pady=5)  # Перемещено выше
+        self.preview_button.grid(row=2, column=0, columnspan=3, pady=5)
 
         self.select_files_button = ttk.Button(master, text="Select Files to Extract / Выбрать файлы для извлечения / 选择要提取的文件", command=self.select_files_to_extract)
-        self.select_files_button.grid(row=3, column=0, columnspan=3, pady=5)  # Перемещено выше
+        self.select_files_button.grid(row=3, column=0, columnspan=3, pady=5)
 
         self.extract_button = ttk.Button(master, text="Extract All Strings / Извлечь все строки из файла / 提取文件中的所有字符串", command=self.extract_strings)
         self.extract_button.grid(row=4, column=0, columnspan=3, pady=10)
@@ -87,7 +87,7 @@ class TransExtractor:
                                               filetypes=((".txt files", "*.txt"), ("All files", "*.*")))
         self.output_file_path.set(filename)
 
-    def extract_strings(self, selected_files=None):  # Принимаем список выбранных файлов
+    def extract_strings(self, selected_files=None):
         try:
             with open(self.trans_file_path.get(), 'r', encoding='utf-8') as f:
                 data = json.load(f)
@@ -106,8 +106,8 @@ class TransExtractor:
                     selected_index = self.column_var.get() - 1  # Индекс выбранного столбца (0-based)
 
                     if selected_index < len(cell_data) and cell_data[selected_index] is not None:
-                        # Сохраняем строки с переносами как есть
-                        file_strings.append(cell_data[selected_index].replace('\n', '\\n'))
+                        # Заменяем \n на §
+                        file_strings.append(cell_data[selected_index].replace('\n', '§'))
 
                 # Добавляем имя файла и строки из него в общий список
                 if file_strings:
@@ -140,11 +140,11 @@ class TransExtractor:
                     string_index = 0
                 elif current_file_key is not None:
                     if current_file_key in trans_data['project']['files']:
-                        # Добавляем строку в выбранный столбец, заменяя \n на переносы строк
+                        # Добавляем строку в выбранный столбец, заменяя § на \n
                         data_list = trans_data['project']['files'][current_file_key]['data'][string_index]
                         while len(data_list) <= selected_column:
                             data_list.append(None)
-                        data_list[selected_column] = line.replace('\\n', '\n')
+                        data_list[selected_column] = line.replace('§', '\n')
                         string_index += 1
 
             # Сохраняем измененный .trans файл под новым именем
